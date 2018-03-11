@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newsapp.job.newsapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:src="@drawable/img_news" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:background="@drawable/edit_text"
+        android:padding="5dp"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Email Address "
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/bJoin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/editText_email"
+        android:layout_alignLeft="@+id/editText_email"
+        android:layout_alignRight="@+id/editText_email"
+        android:layout_alignStart="@+id/editText_email"
+        android:layout_below="@+id/editText_email"
+        android:layout_marginTop="71dp"
+        android:text="Join"
+        android:onClick="join"
+        android:background="@drawable/button" />
+</RelativeLayout>
